@@ -1,0 +1,243 @@
+import { Evento } from '../evento'
+
+const eventos: Evento[] = [
+    {
+        id: "1a476ea4-9826-4797-a569-baa3bb3add72",
+        alias: 'evento-fullstack',
+        senha: 'senha123',
+        nome: 'Evento de Desenvolvimento Fullstack',
+        data: new Date('2024-12-01T10:00:00Z'),
+        local: 'São Paulo, SP',
+        descricao:
+            'Um evento completo para aprender desenvolvimento fullstack do zero.',
+        imagem: 'https://play-lh.googleusercontent.com/mpBm6uxkAwCTaDL7us2iG0L-Lpxb6_vUYxJ5dBMSrKFGZoION2lUY5RkJYModzngyIk',
+        imagemBackground:
+            'https://images.prismic.io/vaultinum/0458a9f1-e149-4037-b9aa-aa4b4fb53c25_propriete-intellectuelle-code-source-protection-compressed.jpg?auto=compress,format&rect=0,0,2400,981&w=2400&h=981',
+        publicoEsperado: 200,
+        convidados: [
+            {
+                id: "8ca99e6a-168f-44f8-993a-9ba1386e5d29",
+                nome: 'Alice Silva',
+                email: 'alice@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 1,
+            },
+            {
+                id: "be8b66e0-774c-4a17-9aea-965b61ca6e5b",
+                nome: 'Carlos Pereira',
+                email: 'carlos@example.com',
+                confirmado: false,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+            {
+                id: "8d0f632e-0acf-4db9-852b-9013ac3ffd0c",
+                nome: 'Beatriz Lima',
+                email: 'beatriz@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 2,
+            },
+        ],
+    },
+    {
+        id: "c2290fbe-e443-4e97-8e97-6939e79c39f5",
+        alias: 'evento-js-avancado',
+        senha: 'js2024',
+        nome: 'Workshop Avançado de JavaScript',
+        data: new Date('2024-11-20T15:00:00Z'),
+        local: 'Rio de Janeiro, RJ',
+        descricao: 'Um workshop avançado para programadores JavaScript.',
+        imagem: 'https://www.datocms-assets.com/48401/1628644950-javascript.png?auto=format&fit=max&w=1200',
+        imagemBackground:
+            'https://blog.cronapp.io/wp-content/uploads/2020/09/javascript-1.jpg',
+        publicoEsperado: 100,
+        convidados: [
+            {
+                id: "95b82fc4-af5d-4efa-b674-b4920aa63eae",
+                nome: 'Eduardo Santos',
+                email: 'eduardo@example.com',
+                confirmado: true,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+            {
+                id: "70978024-c962-4dd6-9691-e4526e27672b",
+                nome: 'Fernanda Costa',
+                email: 'fernanda@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 1,
+            },
+        ],
+    },
+    {
+        id: "23c23eb7-cc7c-46d2-ac09-57ee23ad6af1",
+        alias: 'evento-dev-frontend',
+        senha: 'front123',
+        nome: 'Bootcamp de Desenvolvimento Frontend',
+        data: new Date('2024-11-15T09:00:00Z'),
+        local: 'Belo Horizonte, MG',
+        descricao: 'Aprenda a criar interfaces incríveis e responsivas.',
+        imagem: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/recact_angular_vue.jpg',
+        imagemBackground:
+            'https://www.frontendmag.com/wp-content/uploads/2023/01/easiest-front-end-framework.jpeg',
+        publicoEsperado: 150,
+        convidados: [
+            {
+                id: "8d3e093e-d6a6-4675-94ea-314a81f72a71",
+                nome: 'Gabriela Rocha',
+                email: 'gabriela@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 1,
+            },
+            {
+                id: "5fd2c601-3616-43a1-9042-52492b0c5075",
+                nome: 'Hugo Nogueira',
+                email: 'hugo@example.com',
+                confirmado: false,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+            {
+                id: "f18f2c80-5579-4496-977b-15e35a0c6441",
+                nome: 'Isabela Martins',
+                email: 'isabela@example.com',
+                confirmado: true,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+        ],
+    },
+    {
+        id: "64dcc814-e26e-4b53-a624-a93207d5b8a5",
+        alias: 'casamento-alberto-marina',
+        senha: 'casamento2024',
+        nome: 'Casamento do Alberto e Marina',
+        data: new Date('2024-11-25T16:00:00Z'),
+        local: 'Florianópolis, SC',
+        descricao:
+            'Celebração do casamento de Alberto e Marina com amigos e familiares.',
+        imagem: 'https://i.em.com.br/IQ1l_dkc9VYK5P8PW-EaTphOuF4=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/05/21/1496049/uma-cor-que-esta-totalmente-proibida-para-as-convidadas-de-acordo-com-a-etiqueta-de-casamento-e-o-branco-que-esta-reservado-para-as-noivas-a-nao-ser-que-o-casamento-seja-na-praia_1_55583.jpg',
+        imagemBackground:
+            'https://www.psicologo.com.br/wp-content/uploads/casamento-feliz-um-guia-para-casamentos-felizes.jpg',
+        publicoEsperado: 150,
+        convidados: [
+            {
+                id: "860e713c-2c5e-4cce-bf89-4b21c0599157",
+                nome: 'Bruno Cardoso',
+                email: 'bruno@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 1,
+            },
+            {
+                id: "def2ab40-46e0-4dd5-8d0a-bb1879f65e58",
+                nome: 'Carla Mendes',
+                email: 'carla@example.com',
+                confirmado: true,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+        ],
+    },
+    {
+        id: "61a79ec6-8f42-4c65-b9dd-29315b10f237",
+        alias: 'aniversario-joao',
+        senha: 'joao2024',
+        nome: 'Aniversário do João - 30 Anos',
+        data: new Date('2024-12-05T18:00:00Z'),
+        local: 'Curitiba, PR',
+        descricao:
+            'Comemoração dos 30 anos de João com amigos próximos e familiares.',
+        imagem: 'https://img.elo7.com.br/product/600x380/4C55C74/capa-painel-redondo-tema-feliz-aniversario-em-tecido-1-50m-festa.jpg',
+        imagemBackground:
+            'https://img.freepik.com/vetores-gratis/fundo-da-celebracao-dos-baloes-e-confetti_1048-2223.jpg',
+        publicoEsperado: 80,
+        convidados: [
+            {
+                id: "87e3ec46-ebf7-4a6e-af11-825715040bfa",
+                nome: 'Maria Souza',
+                email: 'maria@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 2,
+            },
+            {
+                id: "7f798858-ff60-4dc3-9aa5-200985f2fdee",
+                nome: 'José Almeida',
+                email: 'jose@example.com',
+                confirmado: false,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+        ],
+    },
+    {
+        id: "5fcb56b7-70ba-4284-afe1-3887e2ec1f4d",
+        alias: 'inauguracao-loja-estrela',
+        senha: 'estrela2024',
+        nome: 'Inauguração da Loja Estrela',
+        data: new Date('2024-12-10T09:00:00Z'),
+        local: 'Porto Alegre, RS',
+        descricao:
+            'Evento de inauguração da nova loja Estrela com brindes e promoções.',
+        imagem: 'https://cosmeticinnovation.com.br/wp-content/uploads/2018/01/estrela_cosmeticos.png',
+        imagemBackground:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-0_VdF_lcXATRHDUaaI0AQCt8R6Y_ShR3A&s',
+        publicoEsperado: 300,
+        convidados: [
+            {
+                id: "5bd49024-7aa4-44e2-a7c9-9ebd77e92a00",
+                nome: 'Cláudia Lima',
+                email: 'claudia@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 3,
+            },
+            {
+                id: "aa7a09a9-16a5-45b4-bb8e-8331820b0491",
+                nome: 'Ricardo Barbosa',
+                email: 'ricardo@example.com',
+                confirmado: true,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+        ],
+    },
+    {
+        id: "0e28ce40-7f65-4d20-a699-6e36826645f8",
+        alias: 'reuniao-familia-oliveira',
+        senha: 'familia2024',
+        nome: 'Reunião da Família Oliveira',
+        data: new Date('2024-12-15T12:00:00Z'),
+        local: 'Salvador, BA',
+        descricao: 'Reunião de fim de ano da família Oliveira.',
+        imagem: 'https://www.themonastery.org/assets/themonastery/blog/scaled/duggars.jpg',
+        imagemBackground:
+            'https://img.freepik.com/fotos-premium/ondas-abstratas-brilhantes-de-celebracao-do-arco-iris-fluem-suavemente-geradas-por-ia_188544-9530.jpg?semt=ais_hybrid',
+        publicoEsperado: 50,
+        convidados: [
+            {
+                id: "d9cb7a50-899f-4f98-a598-0874a2c1311e",
+                nome: 'Thiago Oliveira',
+                email: 'thiago@example.com',
+                confirmado: true,
+                possuiAcompanhantes: true,
+                qtdeAcompanhantes: 4,
+            },
+            {
+                id: "2a272653-27f5-4cb7-933d-70f117a98647",
+                nome: 'Letícia Oliveira',
+                email: 'leticia@example.com',
+                confirmado: true,
+                possuiAcompanhantes: false,
+                qtdeAcompanhantes: 0,
+            },
+        ],
+    },
+]
+
+export default eventos

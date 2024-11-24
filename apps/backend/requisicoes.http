@@ -1,0 +1,64 @@
+GET http://localhost:4000/ping
+
+###
+
+GET http://localhost:4000/eventos
+
+###
+GET http://localhost:4000/eventos/evento-semana-formacao-dev
+
+###
+GET http://localhost:4000/eventos/1a476ea4-9826-4797-a569-baa3bb3add72
+
+###
+GET http://localhost:4000/eventos/validar/evento-dev-frontend/1a476ea4-9826-4797-a569-baa3bb3add72
+
+###
+GET http://localhost:4000/eventos/validar/evento-dev-frontend-01/1a476ea4-9826-4797-a569-baa3bb3add72
+
+###
+POST http://localhost:4000/eventos/acessar
+Content-Type: application/json
+
+{
+    "id": "23c23eb7-cc7c-46d2-ac09-57ee23ad6af1",
+    "senha": "front123"
+}
+
+###
+POST http://localhost:4000/eventos/evento-dev-frontend/convidado
+Content-Type: application/json
+
+{
+    "id": "7532ee4a-733a-4847-9b93-c7f48b80b97e",
+    "nome": "Ricardo Morais",
+    "email": "ricardo.morais@gmail.com",
+    "confirmado": true,
+    "possuiAcompanhantes": true,
+    "qtdeAcompanhantes": 10
+}
+
+###
+POST http://localhost:4000/eventos
+Content-Type: application/json
+
+{
+    "id": "2dd803a0-d8e8-4af3-ac30-006c2b2f5237",
+    "alias": "evento-semana-formacao-dev",
+    "senha": "teste123",
+    "nome": "Evento Semana Formação DEV",
+    "data": "2024-12-31T23:00",
+    "local": "São Paulo",
+    "descricao": "Evento de tecnologia",
+    "imagem": "https://totalip.com.br/wp-content/uploads/2023/08/A-tecnologia-impulsiona-o-futuro-do-Brasil.png",
+    "imagemBackground": "https://blog.ead.unipar.br/wp-content/uploads/2021/04/ti.jpg",
+    "publicoEsperado": 1000,
+    "convidados": [{
+         "id": "3a9a0306-70c5-4d20-9bca-6ac3c570840f",
+        "nome": "Ricardo Morais",
+        "email": "ricardo.morais@gmail.com",
+        "confirmado": true,
+        "possuiAcompanhantes": true,
+        "qtdeAcompanhantes": 10
+    }]
+}
